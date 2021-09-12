@@ -16,8 +16,8 @@ from python.utils import draw_plot, process_result  # type: ignore
 from typing import Any, Tuple, Union
 
 TITLE = "Gradient visualizer"
-ICON_PATH = "-/source/assets/icon.png"
-UI_PATH = "-/source/ui/main_window.ui"
+ICON_PATH = "source/assets/icon.png"
+UI_PATH = "source/ui/main_window.ui"
 
 DEFAULT_TOLERANCE = 1e-6
 
