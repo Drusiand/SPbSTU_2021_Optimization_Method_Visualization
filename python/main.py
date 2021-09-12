@@ -1,5 +1,5 @@
 from python.main_window import MainWindow  # type:ignore
-from PyQt5.QtWidgets import QApplication
+from PyQt5.QtWidgets import QApplication   # type: ignore
 import sys
 
 

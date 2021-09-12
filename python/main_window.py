@@ -1,6 +1,6 @@
-from PyQt5 import uic
-from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import QMainWindow, QLabel, QPushButton, QLineEdit, QVBoxLayout
+from PyQt5 import uic  # type: ignore
+from PyQt5.QtGui import QIcon  # type: ignore
+from PyQt5.QtWidgets import QMainWindow, QLabel, QPushButton, QLineEdit, QVBoxLayout  # type: ignore
 
 from sympy import symbols  # type: ignore
 from sympy.parsing.sympy_parser import standard_transformations, implicit_multiplication_application, parse_expr  # type: ignore
