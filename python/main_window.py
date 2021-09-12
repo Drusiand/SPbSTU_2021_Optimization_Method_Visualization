@@ -3,8 +3,7 @@ from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QMainWindow, QLabel, QPushButton, QLineEdit, QVBoxLayout
 
 from sympy import symbols  # type: ignore
-from sympy.parsing.sympy_parser import standard_transformations, implicit_multiplication_application, \
-    parse_expr  # type: ignore
+from sympy.parsing.sympy_parser import standard_transformations, implicit_multiplication_application, parse_expr  # type: ignore
 
 import matplotlib.pyplot as plt  # type: ignore
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas  # type: ignore
