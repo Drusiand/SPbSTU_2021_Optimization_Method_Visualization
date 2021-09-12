@@ -32,8 +32,8 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
         
-    - name: actions-pytest
-      uses: xoviat/actions-pytest@0.1-alpha2
+    - name: GitHub Action for pytest
+      uses: cclauss/GitHub-Action-for-pytest@0.5.0
       
     - name: Mypy Check
       uses: jpetrucciani/mypy-check@0.910
