@@ -1,5 +1,8 @@
+import pytest  # type: ignore
+from pytestqt import qtbot  # type: ignore
+
 from sympy import symbols  # type:ignore
-from PyQt5 import QtCore
+from PyQt5 import QtCore  # type: ignore
 from python.main_window import MainWindow  # type:ignore
 from python.utils import process_result  # type:ignore
 from python.enums import Error  # type:ignore
