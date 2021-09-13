@@ -52,7 +52,7 @@ jobs:
       uses: paolorechia/fast-pytest-github-action@v1.0
       with:
         pytest_args: 'test/test_public.py'
-
+        requirements_file: ''
 
     - name: Mypy Check
       uses: jpetrucciani/mypy-check@0.910
