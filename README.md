@@ -12,6 +12,13 @@ code pip install -r requirements.txt
 ```  
 in terminal.
 
-## Usage exmaple and results
+## Usage exmaple
 
+to launch programm type
+```  
+python main.py
+```  
+in terminal  
+
+## Results
 ![alt-текст](https://github.com/Drusiand/SPbSTU_2021_Optimization_Method_Visualization/blob/master/source/assets/MainWindow.png)
