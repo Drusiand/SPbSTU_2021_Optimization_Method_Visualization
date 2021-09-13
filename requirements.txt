@@ -1,7 +1,7 @@
 flake8
 pytest
-PyQt5
 pytest-qt
+PyQt5
 sympy
 matplotlib
 numpy
