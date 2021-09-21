@@ -1,7 +1,7 @@
 from sympy import diff, symbols  # type: ignore
 import numpy as np  # type: ignore
 from typing import Any, Tuple
-from numpy.typing import ArrayLike
+from numpy.typing import ArrayLike  # type: ignore
 
 golden_ratio = (1 + 5 ** 0.5) / 2
 

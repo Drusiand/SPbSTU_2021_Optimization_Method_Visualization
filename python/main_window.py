@@ -16,8 +16,8 @@ from python.utils import draw_plot, process_result  # type: ignore
 from typing import Any, Tuple, Union
 
 TITLE = "Gradient visualizer"
-ICON_PATH = "../source/assets/icon.png"
-UI_PATH = "../source/ui/main_window.ui"
+ICON_PATH = "source/assets/icon.png"
+UI_PATH = "source/ui/main_window.ui"
 
 DEFAULT_TOLERANCE = 1e-6
 
@@ -149,7 +149,8 @@ class MainWindow(QMainWindow):
 
         """
         try:
-            x_0, y_0 = float(parse_expr(self.line_edit_x_0.text())), float(parse_expr(self.line_edit_y_0.text()))
+            x_0, y_0 = float(parse_expr(self.line_edit_x_0.text().replace(",", "."))), float(
+                parse_expr(self.line_edit_y_0.text().replace(",", ".")))
         except Exception:  # Only way to handle wrong input for some reason
             self.label_result.setText(Error.ERROR_INCORRECT_START)
             return None, None
@@ -167,7 +168,7 @@ class MainWindow(QMainWindow):
         if self.line_edit_tol.text() == "":
             return DEFAULT_TOLERANCE
         try:
-            tolerance = float(parse_expr(self.line_edit_tol.text()))
+            tolerance = float(parse_expr(self.line_edit_tol.text().replace(",", ".")))
         except Exception:  # Only way to handle wrong input for some reason
             self.label_result.setText(Error.ERROR_INCORRECT_TOLERANCE)
             return None
